@@ -1,0 +1,127 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar no campo */
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Botão */
+button {
+    padding: 13px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho da tabela */
+thead {
+    background-color: #1e293b;
+    color: white;
+}
+
+th {
+    padding: 16px 12px;
+    text-align: center;
+}
+
+/* Conteúdo da tabela */
+td {
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Efeito ao passar o mouse */
+tbody tr:hover {
+    background-color: #e2e8f0;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px 5px;
+    }
+}

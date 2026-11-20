@@ -2,10 +2,10 @@ const corpoTabela=document.getElementById("corpoTabela")
 const formulario=document.getElementById("formulario")
 
 const computadores = [
-    {Modelo:"teste1", Preço:"teste1", Processador:"teste1", Memoria Ram:"teste1", Placa de Video:"teste1"},
-    {Modelo:"teste2", Preço:"teste2", Processador:"teste2", Memoria Ram:"teste2", Placa de Video:"teste2"},
-    {Modelo:"teste3", Preço:"teste3", Processador:"teste3", Memoria Ram:"teste3", Placa de Video:"teste3"},
-    {Modelo:"teste4", Preço:"teste4", Processador:"teste4", Memoria Ram:"teste4", Placa de Video:"teste4"},
+    {Modelo:"teste1", Preço:"teste1", Processador:"teste1", Memoria_Ram:"teste1", Placa_de_Video:"teste1"},
+    {Modelo:"teste2", Preço:"teste2", Processador:"teste2", Memoria_Ram:"teste2", Placa_de_Video:"teste2"},
+    {Modelo:"teste3", Preço:"teste3", Processador:"teste3", Memoria_Ram:"teste3", Placa_de_Video:"teste3"},
+    {Modelo:"teste4", Preço:"teste4", Processador:"teste4", Memoria_Ram:"teste4", Placa_de_Video:"teste4"},
 ]
 
 function exibir(){
@@ -17,8 +17,8 @@ function exibir(){
                 <td>${computador.Modelo}</td>
                 <td>${computador.Preço}</td>
                 <td>${computador.Processador}</td>
-                <td>${computador.Memoria Ram}</td>
-                <td>${computador.Placa de video}</td>
+                <td>${computador.Memoria_Ram}</td>
+                <td>${computador.Placa_de_Video}</td>
             </tr>
         `
     }
@@ -29,12 +29,15 @@ exibir()
 formulario.addEventListener("submit", function(evento){
     evento.preventDefault()
 
-    const valorNome=document.getElementById("campoNome").value
-    const valorCurso=document.getElementById("campoCurso").value
+    const campomodelo=document.getElementById("campomodelo").value
+    const campopreço=document.getElementById("campopreço").value
+    const campoprocessador=document.getElementById("campoprocessador").value
+    const campomemoriaram=document.getElementById("campomemoriaram").value
+    const campoplacadevidio=document.getElementById("campoplacadevidio").value
 
-    const x = {nome:valorNome, curso:valorCurso}
+    const x = {Modelo:campomodelo, Preço:campopreço, Processador:campoprocessador, Memoria_Ram:campomemoriaram, Placa_de_Video:campoplacadevidio}
 
-    alunos.push(x)
+    computadores.push(x)
     
     exibir()
 
